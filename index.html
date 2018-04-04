@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <title></title>
+  </head>
+  <body>
+    <main class="main-container">
+	    <div class="main-container--header">
+		    <h1><span>/wikipedia/</span>Search</h1>
+		    <p><em>As seen on Wikipedia!</em></p>
+	    </div>
+	    <div class="main-container--search">
+			  <input type="text" id="search-input" pattern="[^'<>!*@{}()[]\x22]+">
+			  <button class="button search-button" type="submit" id="button">
+				  <i class="fas fa-search"></i>
+			  </button>
+			  <a class="button random-button" href="https://en.wikipedia.org/wiki/Special:Random">RANDOM</a>
+	    </div>
+    </main>
+    <div class="results-container"></div>
+    <script src="wiki.js"></script>
+  </body>
+</html>
